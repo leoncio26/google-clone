@@ -3,30 +3,45 @@
 <head>
     <meta charset="utf-8">
     <title>Clone da página do google</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>  
 <body>
     <header>
-        <a href="#">Gmail</a>
-        <a href="#">Imagens</a>
-        <a href="#"><img src="" alt="icone de opções"></a>
-        <a href="#">Fazer login</a>
+        <nav>
+            <a href="#">Gmail</a>
+            <a href="#">Imagens</a>
+            <a href="#"><img id="btn-options" src="img/options2.png"></a>
+            <a id="btn-login" href="#">Fazer login</a>
+        </nav>
     </header>
     <main>
-        <img src="" alt="logo">
-        <input type="text">
-        <a href="#">Pesquisa Google</a>
-        <a href="#">Estou com sorte </a>
-        <a href="#">Conheça a vida e obra de Frida Khlo</a>
+        <img src="img/logo.png" alt="logo">
+        <form>
+            <div id="div-search" tabindex="1">
+                <input type="text" size="30" id="input-search">
+                <a href="#"><img id="img-teclado" src="img/teclado.png" alt="teclado virtual"></a>
+                <a href="#"><img src="img/microfone.png" alt="microfone"></a>
+            </div>
+            
+            <div>
+                <input class="btn" type="submit" value="Pesquisa Google">
+                <input class="btn" type="submit" value="Estou com sorte">
+            </div>
+        </form>
     </main>
     <footer>
         <p>Brasil</p>
         <nav>
-            <a href="#">Publicidade</a>
-            <a href="#">Negócios</a>
-            <a href="#">Sobre</a>
-            <a href="#">Privacidade</a>
-            <a href="#">Termos</a>
-            <a href="#">Configurações</a>
+            <div id="left">
+                <a href="#">Publicidade</a>
+                <a href="#">Negócios</a>
+                <a href="#">Sobre</a>
+            </div>
+            <div id="right">
+                <a href="#">Privacidade</a>
+                <a href="#">Termos</a>
+                <a href="#">Configurações</a>
+            </div>
         </nav>
     </footer>
 </body> 

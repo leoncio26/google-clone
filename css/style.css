@@ -1,0 +1,190 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*HEADER*/
+header {
+    height: 10vh;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;/*Posiciona os elementos no lado direito*/
+}
+
+/*Estilo do link do header*/
+header a {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*Estilo do botão de login*/
+#btn-login {
+    color: white;
+    font-weight: bold;
+    padding: 8px 14px 8px 14px;
+    border-radius: 4px;
+    background-color: rgb(25, 125, 255);
+    cursor: default;
+    margin-right: 35px;
+}
+
+#btn-login:hover {
+    text-decoration: none;
+}
+
+/*
+    Botão de opções
+*/
+#btn-options {
+    opacity: 0.5;
+}
+
+#btn-options:hover {
+    opacity: 1;
+}
+
+/*
+MAIN
+
+Ajustando a altura e usando flex para o alinhamento
+*/
+main {
+    height: 75vh;
+    display: flex;
+    align-items: center;/*Centraliza os elementos*/
+    justify-content: center;
+    flex-direction: column;/*Posiciona um embaixo do outro*/
+}
+
+/*Alinha os botões em cima do input de pesquisa e centraliza*/
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*   Campo de pesquisa   */
+
+#div-search{
+    width: 500px;
+    height: 45px;
+    margin: 30px 0;
+    border: 1px solid rgb(218, 218, 218);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 1px 1px rgb(184, 184, 184);
+    transition: box-shadow 0.1s ease-in-out;
+}
+
+#div-search:focus-within {
+    box-shadow: 0 2px 4px 1px rgb(223, 223, 223);
+    outline: none;
+}
+
+#div-search:hover {
+    box-shadow: 0 2px 4px 1px rgb(223, 223, 223);
+}
+
+#input-search {
+    font-size: 20px;
+    border: none;
+    /*margin: 0 30px 0 15px;*/
+    /*border: 1px solid rgb(223, 223, 223);
+    margin: 30px 0;
+    box-shadow: 0 1.5px 1px rgb(211, 211, 211);
+    transition: box-shadow 0.1s ease-in-out;*/
+}
+
+#input-search:focus {
+    outline: none;
+    /*box-shadow: 0 1.5px 4px 1px rgb(211, 211, 211);*//*manter o estilo feito no hover*/
+}
+
+#img-teclado {
+    opacity: 0.7;
+}
+
+#img-teclado:hover {
+    opacity: 1;
+}
+
+#div-search a {
+    /*margin-right: 20px;*/
+}
+
+/*  Estilizando os botões Pesquisa google e Estou com sorte */
+
+.btn {
+    background-color: rgb(240, 240, 240);
+    padding: 12px;
+    color: rgb(121, 121, 121);
+    border: none;
+    font-weight: bold;
+    margin: 4px;
+}
+
+.btn:hover {
+    color: black;
+    border: 1px solid rgb(168, 168, 168);
+    padding: 11px;
+    box-shadow: 0 1px 2px rgb(221, 221, 221);
+    /*
+    Inicialmente padding é 12px no .btn
+    No hover p padding é 11px + 1px da border = 12px
+    Assim não altera o possicionando dos elementos de cima
+    */
+}
+
+/*  FOOTER  */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 15vh;
+    margin: 0;
+    color: rgb(117, 117, 117);
+    background-color: rgb(240, 240, 240);
+    border-top: 1px solid rgb(224, 224, 224);
+    font-size: 14px;
+}
+
+footer a{
+    margin-right: 18px;
+    text-decoration: none;
+    color: rgb(117, 117, 117);
+}
+
+footer p {
+    margin: 0;
+    padding: 0 0 10px 25px;
+    border-bottom: 1px solid rgb(224, 224, 224);/*linha de separação*/
+}
+
+footer nav{
+    display: flex;
+    padding: 10px 0 0px 25px;
+}
+
+/*links da direita*/
+#right {
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;/*posicionando no lado direito*/
+    padding-right: 15px;
+}
+
+/*links da esquerda*/
+#left {
+    width: 50vw;
+}
